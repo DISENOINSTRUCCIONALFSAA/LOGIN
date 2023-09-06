@@ -1,2 +1,10 @@
 # LOGIN
-En este repositorio se encuentra el código fuente y la documentación de cómo realizar mantenimiento de la página de LOGIN.
+En este repositorio se encuentra el código fuente y la documentación de cómo realizar mantenimiento de la página de LOGIN. A continuación se muestran detalles del uso de la aplicación y el funcionamiento del código.
+
+## CÓMO FUNCINOA
+
+La página de ingreso a tiene como finalidad mapear la frecuencia y el motivo principal de la visita de los usuarios a la Biblioteca Digital de Instructores. Es un complemento de la información estadística que se obtiene mediante el uso de Google Analytics. El último en mención, nos permite recopilar información genérica sobre cuáles son las páginas más visitadas dentro del Site y los dispositivos desde los que acceden los usuarios. Debido a que una de las necesidades mencionadas por el Gerente del área de Desarrollo Técnico es la de poder conocer la información de ambos medios, se justifica la creación de una implementación de App Scripts de Google Workspace que permita que los visitantes se registren antes de ingresar al Site. Esto se basa en las limitaciones de Google Sites como página extensible de Google Drive, la que por su naturaleza gratuita, no permite añadir Tags de mapeo en el código fuente pues este es inaccesible. 
+
+### PÁGINA DE INGRESO
+
+El acceso a la Web App para ingreso a la Biblioteca Digital se realiza mediante el siguiente [enlace]([[https://website-name.com](https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzzB0Akz0v8WNORsDdRPF8o9t50v6aDsrdb4jZTwRGPBACiW68B2KZ2AXbBpxsGc2uv/exec)https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzzB0Akz0v8WNORsDdRPF8o9t50v6aDsrdb4jZTwRGPBACiW68B2KZ2AXbBpxsGc2uv/exec)https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzzB0Akz0v8WNORsDdRPF8o9t50v6aDsrdb4jZTwRGPBACiW68B2KZ2AXbBpxsGc2uv/exec)https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzzB0Akz0v8WNORsDdRPF8o9t50v6aDsrdb4jZTwRGPBACiW68B2KZ2AXbBpxsGc2uv/exec]). Esta Web App tiene como base de datos al archivo de Google Spreadsheets al que se puede acceder mediante el siguiente [enlace]([https://docs.google.com/spreadsheets/d/1Ufc0bTdm7j9-vZc0Ld9iqHZYSSDq_MEn9WbFj7AzSCo/edit#gid=0]).
