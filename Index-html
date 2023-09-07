@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+
+/* Clear floats after image containers */
+      #left{    
+ float: left;  
+ }  
+ #right{    
+ float: right;
+      }
+.filaimg {
+  display: flex;
+  justify-content: space-between;
+
+}
+      .btnDiv {
+        display: flex;  
+        justify-content: center;  
+        align-items: center; 
+      }
+      .btnRegistro {
+        transition-duration: 0.4s;
+        border-radius: 12px;
+        font-size: 14px;
+        background-color: #4CAF50;
+        color: white;
+        width: 200px;
+        height: 35px;
+
+        }
+
+.btnRegistro:hover {
+  background-color: #e7e7e7; 
+  color: black;
+}
+      
+      .cnt1 {
+        
+      }
+ 
+      body{
+          
+        background-color: #fde092;
+        width: 100%;
+      } 
+
+        h1 {
+          color: black;
+          padding:30px;
+          font-weight: bold;
+          text-align: center;
+        }
+      #signupform{
+          padding: 5px;
+      }
+      
+       
+      
+      .datalist{
+          margin-bottom: 30px;
+          height: 45px;
+          border: 1px solid #ddd;
+          padding-left: 10px;
+        width: 100%;
+      }
+      
+      .chkbox{
+          width: 20px;
+    height: 20px;
+
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+      }
+      
+      label {
+    display: block;
+    padding-left: 20px;
+    text-indent: -3px;
+        text-align:justify;
+        padding-right:20px;
+}
+      
+      button{
+          padding:10px;
+          height: 50px;
+          background: #188c01;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+      }
+    </style>
+
+    <script>
+    function onFailure(error) {
+      document.getElementById('reg').innerHTML = "ERROR: " + error.message;
+    }
+    function onSuccess(message) {
+      document.getElementById("nombre").value = '';
+      document.getElementById("motivo").value = '';
+      document.getElementById("consentimiento").value = '';
+      document.getElementById('reg').innerHTML = message;
+    } 
+    function AddRow()
+    {
+      document.getElementById('reg').innerHTML = "";
+      var dlNombre = document.getElementById("nombre").value;
+      var dlMotivo = document.getElementById("motivo").value;
+      var checked = document.getElementById("consentimiento");
+      var chkConsentimiento = document.getElementById("consentimiento").value;
+      if (dlNombre!="" && checked.checked == true)
+      {
+        google.script.run.withSuccessHandler(onSuccess).
+                        withFailureHandler(onFailure).
+                        AddRecord(dlNombre, dlMotivo, chkConsentimiento);
+        window.open('https://sites.google.com/ferreyros.com.pe/bibloteca-digital-desarrollo-t/biblioteca-principal', '_blank', 'fullscreen=yes'); 
+        //google.script.host.close(); 
+        document.write("Registro exitoso, por favor cierre esta página");
+      }                
+    }
+    </script>
+  </head>
+
+
+  <body> 
+   
+    
+ <div class = "cnt1">
+   
+   <div class="filaimg">
+ 
+    <img src="https://i.ibb.co/zfRJvgp/Ferreyros.png" alt="Ferreyros" style="width:30%" id="left">
+  
+    <img src="https://i.ibb.co/424qzB9/icono-DT.png" alt="DT" style="width:20%" id="right">
+  
+</div>
+   
+   <form id=loginForm>
+  <br> 
+  <h1>CREDENCIALES PARA EL INGRESO A LA BIBLIOTECA DIGITAL DT</h1> 
+  <br>
+  <span>Sesión iniciada por: <?= email ?></span><br>
+   <br>
+     
+     <input class="datalist" list="dlNombre" id="nombre" placeholder="Seleccione su nombre" required>
+    <datalist id="dlNombre">  
+      <option value="">Seleccione su nombre</option>  
+      <option value="ASARCADO COLLANTES, Juan">ASARCADO COLLANTES, Juan</option>
+      <option value="AVILA VASQUEZ, Cesar">AVILA VASQUEZ, Cesar</option>
+      <option value="BARRIOS MEDINA, Jose">BARRIOS MEDINA, Jose</option>
+      <option value="BENITES MOZO, Yarilenka">BENITES MOZO, Yarilenka</option>
+      <option value="CARDENAS NINA, Geancarlo">CARDENAS NINA, Geancarlo</option>
+      <option value="CARPIO MENDIOLA, Luis">CARPIO MENDIOLA, Luis</option>
+      <option value="CAYCHO SOLORZANO, Elizabeth">CAYCHO SOLORZANO, Elizabeth</option>
+      <option value="CCASA COA, Flor">CCASA COA, Flor</option>
+      <option value="CHAU SUSANIBAR, Juan">CHAU SUSANIBAR, Juan</option>
+      <option value="CONDORI CABRERA, Luis">CONDORI CABRERA, Luis</option>
+      
+      <option value="CORONEL RUIZ, Eyor">CORONEL RUIZ, Eyor</option>
+      <option value="CUTIPA MACHACA, Helar">CUTIPA MACHACA, Helar</option>
+      <option value="FERNANDEZ PIZARRO, Aaron">FERNANDEZ PIZARRO, Aaron</option>
+      <option value="HONORIO TANDAYPAN, Carlos">HONORIO TANDAYPAN, Carlos</option>
+      <option value="HUAMANÍ SILLOCA, Cecilia">HUAMANÍ SILLOCA, Cecilia</option>
+      <option value="HUANCA MAYTA, Alfredo">HUANCA MAYTA, Alfredo</option>
+      <option value="HUANCA URACAHUA, Sofia">HUANCA URACAHUA, Sofia</option>
+      <option value="HUARCA PACSI, Michael">HUARCA PACSI, Michael</option>
+      <option value="HUAYTA CARRION, Jesus">HUAYTA CARRION, Jesus</option>
+      <option value="HURTADO DE MENDOZA, Angel">HURTADO DE MENDOZA, Angel</option>
+      
+      <option value="INDIGOYEN LIMAYMANTA, Carlos">INDIGOYEN LIMAYMANTA, Carlos</option>
+      <option value="LAZO BUSTOS, Efren">LAZO BUSTOS, Efren</option>
+      <option value="MIRANDA YARANGA, Raul">MIRANDA YARANGA, Raul</option>
+      <option value="MITMA AYVAR, Cesar">MITMA AYVAR, Cesar</option>
+      <option value="NAVEDA BULLÓN, Alfredo">NAVEDA BULLÓN, Alfredo</option>
+      <option value="OLANO BARRIOS, Jordana">OLANO BARRIOS, Jordana</option>
+      <option value="PARRAGA ARTICA, Ernesto">PARRAGA ARTICA, Ernesto</option>
+      <option value="PEÑA MACHACUAY, Cristian">PEÑA MACHACUAY, Cristian</option>
+      <option value="RAMOS MAMANI, Victor">RAMOS MAMANI, Victor</option>
+      <option value="RAYGADA VARGAS, Erick">RAYGADA VARGAS, Erick</option>
+
+      <option value="RIJALBA AGUILAR, Jose">RIJALBA AGUILAR, Jose</option>
+      <option value="RODRIGUEZ MANCILLA, Julio">RODRIGUEZ MANCILLA, Julio</option>
+      <option value="SALAZAR ALVAREZ, Julio">SALAZAR ALVAREZ, Julio</option>
+      <option value="SOBRADOS CRUZ, Gerson">SOBRADOS CRUZ, Gerson</option>
+      <option value="VARGAS FLOREZ, Luis">VARGAS FLOREZ, Luis</option>
+      <option value="VARILLAS VILLA, Dennis">VARILLAS VILLA, Dennis</option>
+      <option value="VICTORIO OCARES, Arturo">VICTORIO OCARES, Arturo</option>
+      <option value="VILCHEZ ROJAS, Yuri">VILCHEZ ROJAS, Yuri</option>
+      
+    </datalist> 
+
+     <input class="datalist" list="dlMotivo" id="motivo" placeholder="Seleccione el principal motivo de visita" required>
+  <datalist id="dlMotivo">
+   <option value="">Seleccione el principal motivo de visita</option>
+   <option value="Autopreparación">Autopreparación</option>
+   <option value="Generación de material de instrucción">Generación de material de instrucción</option>
+   <option value="Ingreso al classroom de cursos">Ingreso al classroom de cursos</option>
+   <option value="Revisión de las hojas de tarea">Revisión de las hojas de tarea</option>
+  </datalist>
+  
+  
+    
+<div>
+    <label><input type="checkbox" class="chkbox" id="consentimiento" required/> Estás a punto de acceder a la Biblioteca Digital que alberga información altamente confidencial de los servicios de Ferreyros. Te informamos
+de manera categórica que queda terminantemente prohibido cualquier intento
+ilegal de descarga de cualquier contenido de esta página. Esta advertencia se
+emite con el objetivo de preservar tanto tu privacidad como la integridad de
+los datos almacenados en este sitio. </label>
+  </div>
+   
+    <br>
+   <div class="btnDiv">
+     
+        <input id="btnRegistro" class = "btnRegistro", type='submit' value="REGISTRAR" onclick="AddRow()"/>
+        <span id="reg"></span>
+      
+   </div>   
+ </form>
+   <div/>
+   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  </body>
+</html>
