@@ -39,7 +39,7 @@ y también la sección de <script> en el archivo Index.html, que contiene los co
 
 ![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/0f2d51f7-c0d6-4f21-be8d-4b8212d47a7d)
 
-Por otro lado, si es que se desea modificar el diseño o el formato de la Web App, se pueden cambiar las secciones de CSS y HTML del archivo de Index.html, que se encuntran en las líneas que no contienen la sección de <script> mencionada anteriormente. Ambas secciones se encuentran codificadas en <head> y <body> como se muestra a continuación:
+Por otro lado, si es que se desea modificar el diseño o el formato de la Web App, se pueden cambiar las secciones de CSS y HTML del archivo de Index.html, que se encuentran en las líneas que no contienen la sección de <script> mencionada anteriormente. Ambas secciones se encuentran codificadas en <head> y <body> como se muestra a continuación:
 
 ![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/f27f19ef-427f-4275-b601-8caced304e9f)
 
