@@ -7,7 +7,7 @@ La página de ingreso a tiene como finalidad mapear la frecuencia y el motivo pr
 
 ### PÁGINA DE INGRESO
 
-El acceso a la Web App para ingreso a la Biblioteca Digital se realiza mediante el siguiente [enlace](https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzzB0Akz0v8WNORsDdRPF8o9t50v6aDsrdb4jZTwRGPBACiW68B2KZ2AXbBpxsGc2uv/exec). Esta Web App tiene como base de datos al archivo de Google Spreadsheets al que se puede acceder mediante el siguiente [enlace](https://docs.google.com/spreadsheets/d/1Ufc0bTdm7j9-vZc0Ld9iqHZYSSDq_MEn9WbFj7AzSCo/edit#gid=0).
+El acceso a la Web App para ingreso a la Biblioteca Digital se realiza mediante el siguiente [enlace](https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzvlmu5yszUJTL4rRmQzBFYEwZHAlse_k7vsd72W1aYlFiBziQeW5YaUUtA_bDee_mr/exec). Esta Web App tiene como base de datos al archivo de Google Spreadsheets al que se puede acceder mediante el siguiente [enlace](https://docs.google.com/spreadsheets/d/1Ufc0bTdm7j9-vZc0Ld9iqHZYSSDq_MEn9WbFj7AzSCo/edit#gid=0).
 Cuando el usuario ingrese y otorgue todos loe permisos necesarioa a la Web App observará la siguiente interface:
 
 ![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/d207a78b-791c-472a-ae18-76721fb62176)
