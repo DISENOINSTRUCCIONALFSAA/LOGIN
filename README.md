@@ -18,7 +18,8 @@ Luego de ingresar, el usuario debe bucar su nombre en el primer desplegable, y e
 
 Si es que intenta ingresar sin haber completado los campos de los desplegables y sin haber marcado el casillero de verificación, el usuario visualizará una advertencia flotante en los campos que ha omitido, lo cual se muestra a continuación:
 
-![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/1f71cbed-451d-42e5-a581-9da88576a40c)
+![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/3d6ec936-87db-4ea6-abc9-7971406f295f)
+
 
 Cuando el registro sea exitoso, en cambio, será redirigido a la página principal del site de la Biblioteca Digital de Instructores y se mostrará el siguiente mensaje en la Web App para que cierre la pestaña:
 
