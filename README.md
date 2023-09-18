@@ -10,7 +10,7 @@ La página de ingreso a tiene como finalidad mapear la frecuencia y el motivo pr
 El acceso a la Web App para ingreso a la Biblioteca Digital se realiza mediante el siguiente [enlace](https://script.google.com/a/macros/ferreyros.com.pe/s/AKfycbzvlmu5yszUJTL4rRmQzBFYEwZHAlse_k7vsd72W1aYlFiBziQeW5YaUUtA_bDee_mr/exec). Esta Web App tiene como base de datos al archivo de Google Spreadsheets al que se puede acceder mediante el siguiente [enlace](https://docs.google.com/spreadsheets/d/1Ufc0bTdm7j9-vZc0Ld9iqHZYSSDq_MEn9WbFj7AzSCo/edit#gid=0).
 Cuando el usuario ingrese y otorgue todos loe permisos necesarioa a la Web App observará la siguiente interface:
 
-![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/d207a78b-791c-472a-ae18-76721fb62176)
+![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/d3109cc8-b5a3-47c1-973c-083cb9373798)
 
 El llenado de todos los campos es obligatorio. Es preciso mencionar que la información que se recolecta como parte del acceso del usuario a la Web App es la hora en la que ingresó y su correo electrónico. No se almacenan datos mediante cookies para salvaguardar la privacidad de los datos personales del usuario. Si se desea conocer a detalle la información y cómo se almacena, debe ingresar al link del párrafo anterior que lo dirige al archivo de Google Spreadsheets que se encuentra en el siguiente [enlace](https://docs.google.com/spreadsheets/d/1Ufc0bTdm7j9-vZc0Ld9iqHZYSSDq_MEn9WbFj7AzSCo/edit#gid=0). 
 
@@ -18,7 +18,7 @@ Luego de ingresar, el usuario debe bucar su nombre en el primer desplegable, y e
 
 Si es que intenta ingresar sin haber completado los campos de los desplegables y sin haber marcado el casillero de verificación, el usuario visualizará una advertencia flotante en los campos que ha omitido, lo cual se muestra a continuación:
 
-![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/3d6ec936-87db-4ea6-abc9-7971406f295f)
+![image](https://github.com/DISENOINSTRUCCIONALFSAA/LOGIN/assets/144281326/87b187f6-e5a0-49e3-bd42-d2ad9c24e5db)
 
 
 Cuando el registro sea exitoso, en cambio, será redirigido a la página principal del site de la Biblioteca Digital de Instructores y se mostrará el siguiente mensaje en la Web App para que cierre la pestaña:
